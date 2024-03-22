@@ -1,6 +1,6 @@
 node {
   stage('SCM') {
-    git branch:'main', credentialsId: 'gun', url: 'https://github.com/KaKundam/project1.git'
+    git branch:'main', credentialsId: 'Project1', url: 'https://github.com/KaKundam/project1.git'
   }
  stage('SonarQube Analysis') {
  def scannerHome = tool 'SonarQube Scanner';
